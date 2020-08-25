@@ -1,0 +1,11 @@
+@import "./normalize.scss" ;
+@font-face {
+    font-family: "Exo";
+    src: url("./Fonts/Exo2.0-Thin.otf");
+    font-style: normal;
+    font-weight: 200;
+  }
+
+body {
+    font-family: "Trebuchet MS";
+}

@@ -1,0 +1,259 @@
+// .cardWrapper {
+//     position: relative;
+//     &:after {
+//         content: '';
+//         position: absolute;
+//         border: 35px solid transparent; 
+//         border-left: 35px solid green; 
+//         border-top: 35px solid gray;
+//         // border-bottom: 4px solid gray;
+//         top: -4px;
+//         left: -4px;
+//     }
+// }
+$default: #1698d9;
+$onhover: #2ea8e6;
+$selected: #d91667;
+$disabled: #b3b3b3;
+.card {
+    color: #fff;
+    height: 480px;
+    width: 320px;
+    border: 4px solid $default;
+    border-top-left-radius: 0px;
+    border-top: 0;
+    border-left: 0;
+    border-radius: 11px;
+    background: linear-gradient(-45deg, #fff 95%, transparent 25px);
+    overflow: hidden;
+    position: relative;
+
+    cursor: pointer;
+        
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 280px;
+            height: 20px;
+            top: 0px;
+            left: 42px;
+            color: $default;
+            // background: #1698d9;
+            border-radius: 10px;
+            border: 4px solid $default;
+            border-bottom: 0;
+            border-left: 0;
+            border-right: 0;
+            border-top-left-radius: 0;
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            width: 320px;
+            height: 440px;
+            top: 40px;
+            left: 0;
+            color: $default;
+            // background: #1698d9;
+            border-radius: 10px;
+            border: 4px solid $default;
+            border-top: 0;
+            border-right: 0;
+            border-top-left-radius: 0;
+        }
+    .corner {
+        position: absolute;
+        top: -14px;
+        left: 14px;
+        width: 4px;
+        height: 80px;
+        // height: 4px;
+        transform: rotate(45deg);
+        background: $default;
+        // border: 2px solid #1698d9;
+    }
+
+    .capture {
+        padding: 20px 44px;
+    }
+    h2, h3 {
+        color: #000;
+    }
+    h2 {
+        font-size: 48px;
+        margin-left: -4px;
+        
+    
+    }
+    h3 {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+    span {
+        font-size: 16px;
+        color: rgb(102, 102, 102);
+        font-family: "Trebuchet MS";
+    }
+}
+.cardImage {
+    background: url("../../images/cat.png");
+    background-repeat: no-repeat;
+    background-size: 120% 80%;
+    background-position-x: 45%;
+    background-position-y: 210%;
+    height: 100%;
+    
+}
+
+.weight {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 11px;
+    right: 11px;
+    background-color: #1698d9;
+    border-radius: 50%;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    span {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        &:first-child {
+            font-size: 42px; 
+            margin-top: 12%;
+            margin-bottom: -4px;
+        }
+
+    }
+}
+.underline {
+    margin-top: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+}
+.cardSelected {
+    border-color: $selected;
+    .weight {
+        background: $selected;
+    }
+    .corner {
+        background: $selected;
+    }
+    &:after {
+        border-color: $selected;
+    }
+    &:before {
+        border-color: $selected;
+    }
+}
+.buy {
+    
+    a {
+        color: $default;
+        border-bottom: 1px $default dashed;
+        cursor: pointer;
+        &:hover {
+            color: $onhover;
+        }
+    }
+   
+}
+.sloganWarning {
+    display: none;
+}
+.cardMaskDisabled{
+    background: linear-gradient(-45deg, rgba(199, 190, 190, 0.65) 95%, transparent 25px);
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:1px;
+    left: 4px;
+}
+
+.cardMouseOn {
+    border-color: $onhover;
+    .weight {
+        background: $onhover;
+    }
+    .corner {
+        background: $onhover;
+    }
+    &:after {
+        border-color: $onhover;
+    }
+    &:before {
+        border-color: $onhover;
+    }
+}
+.cardSelectedMouseOn {
+    // border-color: $onhover;
+    // .weight {
+    //     background: $onhover;
+    // }
+    // .corner {
+    //     background: $onhover;
+    // }
+    // &:after {
+    //     border-color: $onhover;
+    // }
+    // &:before {
+    //     border-color: $onhover;
+    // }
+    .sloganDefault {
+        display: none;
+    }
+    .sloganWarning {
+        display: block;
+        color: $selected;
+        margin-bottom: 0px;
+    }
+}
+.cardDisabled {
+    border-color: $disabled;
+    .weight {
+        background: $disabled;
+    }
+    .corner {
+        background: $disabled;
+    }
+    &:after {
+        border-color: $disabled;
+    }
+    &:before {
+        border-color: $disabled;
+    }
+    &:hover {
+        border-color: $disabled;
+        &:after {
+            border-color: $disabled;
+        }
+        &:before {
+            border-color: $disabled;
+        }
+        .weight {
+           background: $disabled; 
+        }
+        .corner {
+            background: $disabled;
+        }
+    }
+}
+@media(max-width: 1140px) {
+
+    .cardWrapper {
+        margin: 0 20px 40px 20px;
+    }
+}
+@media(max-width: 420px) {
+    .cardWrapper {
+        margin: 0 20px 40px 20px;
+        // padding: 0 20px 0 20px;
+        // width: 100%;
+    }
+}
