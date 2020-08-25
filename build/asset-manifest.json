@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cats/static/css/main.75a6d258.chunk.css",
+    "main.js": "/cats/static/js/main.fe85aa41.chunk.js",
+    "main.js.map": "/cats/static/js/main.fe85aa41.chunk.js.map",
+    "runtime-main.js": "/cats/static/js/runtime-main.cfe87a95.js",
+    "runtime-main.js.map": "/cats/static/js/runtime-main.cfe87a95.js.map",
+    "static/js/2.1f3becd2.chunk.js": "/cats/static/js/2.1f3becd2.chunk.js",
+    "static/js/2.1f3becd2.chunk.js.map": "/cats/static/js/2.1f3becd2.chunk.js.map",
+    "index.html": "/cats/index.html",
+    "precache-manifest.19708a4ec19bff67e1cc0a28d9ce01a8.js": "/cats/precache-manifest.19708a4ec19bff67e1cc0a28d9ce01a8.js",
+    "service-worker.js": "/cats/service-worker.js",
+    "static/css/main.75a6d258.chunk.css.map": "/cats/static/css/main.75a6d258.chunk.css.map",
+    "static/js/2.1f3becd2.chunk.js.LICENSE.txt": "/cats/static/js/2.1f3becd2.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/cats/static/media/Exo2.0-Thin.44bde874.otf",
+    "static/media/page.module.scss": "/cats/static/media/bg.fca2adbb.jpg",
+    "static/media/card.module.scss": "/cats/static/media/cat.4fab8f3e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cfe87a95.js",
+    "static/js/2.1f3becd2.chunk.js",
+    "static/css/main.75a6d258.chunk.css",
+    "static/js/main.fe85aa41.chunk.js"
+  ]
+}
